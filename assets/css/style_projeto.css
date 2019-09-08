@@ -1,0 +1,190 @@
+.html{
+  margin:0;
+  padding:0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.body{
+  margin:0;
+  padding:0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #edf0ff;
+}
+
+.Project-imgs{
+  display: flex;
+  justify-content: center;
+  margin: 5rem; 
+  background: #292d40;
+  width: auto;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.Project-imgs img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.Project-img img{
+  max-width: 100%;
+  height: auto;
+}
+
+.project-container{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-class{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  background-color: #292d40;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-left: 3rem;
+}
+
+.project-title{
+  justify-content: center;
+  display:flex;
+  font-family: 'Lora', serif;
+  color: #edf0ff;
+  font-size: 2rem;
+}
+
+.membros{
+  align-items: flex-end; 
+  display: flex;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #edf0ff;
+}
+
+.project-description{
+  margin-top: 1rem;
+  display:flex;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #edf0ff;
+  font-size: 1.2rem;
+}
+
+.project-er{
+  display: flex;
+  align-items: flex-end; 
+  margin-top: 15rem;
+  font-family: 'Lora', serif;
+  color: #edf0ff;
+}
+
+.er-members{
+  justify-self: flex-start;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #edf0ff;
+}
+
+.Project-img{
+  border-radius: 2rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  margin-top: 0rem;
+  background-color: #292d40;
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+}
+
+.Project-img img{
+  width: 90%;
+}
+
+.navi {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  width:  100%;
+  margin:0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Lora', sans-serif;
+  background: #292d40;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+
+.Menu1, .Menu2, .Menu3  {
+  color: #edf0ff;
+   font-size: 1.5rem;
+   text-decoration: none;
+}
+
+.menu_tag, .figura{
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .project-container{
+    flex-direction: column;
+    align-content: center;
+    padding-top: 0rem;
+  }
+
+  .Menu1, .Menu2, .Menu3 {
+    display: none;
+  }
+
+  .navi{
+    display: none;
+  }
+  
+  .project-class{
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .Project-img{
+    margin: 0rem;
+    border-radius: 2rem;
+  }
+
+  .Project-imgs{
+    margin: 2rem;
+    padding: 1rem
+    
+  }
+
+  .header{
+    display: flex;
+  }
+
+  .figura{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+  }
+
+  .menu_tag{
+    display: flex;
+    width: 50%;
+    height: 50%
+  }
+
+  .logo{
+    width: 190px;
+  }
+
+}

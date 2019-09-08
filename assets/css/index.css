@@ -1,0 +1,165 @@
+body{
+	background: #edf0ff;
+}
+
+a{
+	text-decoration: none;
+}
+
+.link{  
+	color: #EDF0FF;
+}
+
+.header{
+	display: block
+}
+
+.navi {
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	width:  100%;
+	margin:0 auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-family: 'Lora', sans-serif;
+	background: #292d40;
+	font-size: 1.5rem;
+	border-radius: 2rem;
+}
+
+.Menu1, .Menu2, .Menu3  {
+	color: #edf0ff;
+	font-size: 1.5rem;
+	text-decoration: none;
+
+}
+.figura_index{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.projetos_index{
+	font-family: 'Lora', sans-serif;
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-left: 2.8rem;
+
+}
+
+.lista{
+	display: flex;
+	justify-content: stretch; 
+	margin: 2rem;
+}
+
+.nav{
+	padding: 2rem;
+	display: grid;	
+	width: 100%;
+	grid-template-rows: 1fr 1fr ;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	justify-items: center;
+	align-items: stretch;
+	font-family: 'Red Hat Display', sans-serif;
+	background: #292d40;
+	margin: 2rem;
+	font-size: 1.5rem;
+	border-radius: 2rem;
+}
+.item1, .item2, .item3, .item4{
+	padding: .5rem;
+	background: #525980;
+	border-radius: 1rem;
+	margin:1rem;
+}
+
+.item1{
+	padding: 0.5rem;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.item2{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+}
+.item3{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+}
+.item4{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.logo {
+	padding: 0rem;
+}
+
+.imagem{
+	background: #292d40;
+	padding: 2rem;
+	margin-top: 5rem;
+	border-radius: 2rem;
+	width: 80%;
+}
+.menu_tag, .figura{
+	display: none;
+}
+
+@media (max-width: 420px) {
+	.menu_tag{
+		display:flex;
+		width: 50%;
+		height: 50%;
+	}
+	.header{
+		display:  flex;
+		width: 100%
+	}
+	.figura{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		max-width: 100%;
+	}
+  .imagem{
+    justify-content: center;
+    align-items:center;
+    margin-top: 0rem;
+    padding:2rem;
+  }
+	.navi{
+		display:  none;
+	}
+	.logo{
+		width: 190px
+	}
+
+	.figura_index{
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+    align-items: center;
+    margin:2rem;
+	}
+	.nav{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width:100%;
+		margin:0;
+		padding: 1rem;
+	}	
+}

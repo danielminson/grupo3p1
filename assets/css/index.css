@@ -43,7 +43,7 @@ a{
 	font-family: 'Lora', sans-serif;
 	font-size: 2rem;
 	margin-top: 2rem;
-	margin-left: 2.8rem;
+	margin-left: 4rem;
 
 }
 
@@ -51,6 +51,7 @@ a{
 	display: flex;
 	justify-content: stretch; 
 	margin: 2rem;
+	margin-top: 1rem;
 }
 
 .nav{
@@ -134,12 +135,12 @@ a{
 		align-items:center;
 		max-width: 100%;
 	}
-  .imagem{
-    justify-content: center;
-    align-items:center;
-    margin-top: 0rem;
-    padding:2rem;
-  }
+	.imagem{
+		justify-content: center;
+		align-items:center;
+		margin-top: 0rem;
+		padding:2rem;
+	}
 	.navi{
 		display:  none;
 	}
@@ -151,8 +152,8 @@ a{
 		max-width: 100%;
 		display: flex;
 		justify-content: center;
-    align-items: center;
-    margin:2rem;
+		align-items: center;
+		margin:2rem;
 	}
 	.nav{
 		display: flex;
@@ -161,5 +162,9 @@ a{
 		width:100%;
 		margin:0;
 		padding: 1rem;
-	}	
+	}
+	.lista{
+		margin-top: 2rem;
+	}
+
 }

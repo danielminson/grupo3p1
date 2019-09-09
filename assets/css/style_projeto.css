@@ -41,7 +41,10 @@
 .project-container{
   padding: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left:3rem;
+  margin-right:3rem;
+
 }
 
 .project-class{
@@ -51,7 +54,7 @@
   background-color: #292d40;
   padding: 2rem;
   border-radius: 2rem;
-  margin-left: 3rem;
+  margin-left: 0rem;
 }
 
 .project-title{
@@ -96,8 +99,8 @@
 
 .Project-img{
   border-radius: 2rem;
-  margin-right: 3rem;
-  margin-left: 2rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
   padding: 1rem;
   margin-top: 0rem;
   background-color: #292d40;
@@ -140,6 +143,8 @@
     flex-direction: column;
     align-content: center;
     padding-top: 0rem;
+    margin-left:0rem;
+    margin-right:0rem;
   }
 
   .Menu1, .Menu2, .Menu3 {

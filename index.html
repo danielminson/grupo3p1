@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"> 
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/index.js"></script>
 </head>
 <body>
   <header class="header">
@@ -22,16 +24,15 @@
     <p><a class="Menu3" href="projeto.html">Projetos</a> </p> 
   </nav>
   <figure class="figura_index">
-    <img class="imagem" src="https://picsum.photos/id/119/1000/300" alt="uma imagem">
+    <img class="imagem" src={{this.imagemindex}} alt="uma imagem">
   </figure>
   <div class= "projetos_index"> Projetos de: </div>
   <nav class="lista">
     <ul class="nav">
-     <li class="item1"><a class="link" href="categoria.html">Mecatrônica</a></li>
-     <li class="item2"><a class="link" href="categoria.html">Computação</a></li>
-     <li class="item3"><a class="link" href="categoria.html">Design</a></li>
-     <li class="item4"><a class="link" href="categoria.html">Matemática</a></li>
-   </ul>
+      {{#each portfolio}}
+     <li class="item1"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
+      {{/each}}
+    </ul>
  </nav>
 </body>
 </html>

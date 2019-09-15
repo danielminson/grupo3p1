@@ -8,6 +8,8 @@
   <link href="assets/css/Categoria.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/categorias.js"></script>
 </head>
 <body>
   <header class="header">
@@ -16,44 +18,45 @@
       <img class="menu_tag" src="assets/img/menu_img.png">
     </figure>
   </header>    
-  <nav class="navi"> 
-    <p><a class="Menu1" href="index.html">Home</a></p>
-    <p><a class="Menu2" href="projeto.html">Projetos</a></p>
-    <p><a class="Menu3" href="sobre.html">Sobre</a></p>
-  </nav> 
+  <ul class="navi"> 
+    <li>
+      <a class="Menu1" href="index.html">Home</a>
+    </li>
+    <li class="Menu2"><p>Projetos</p>      
+      <ul class="teste">
+        <li class="box"><a href="index.html">GFDGFD</a></li>
+        <li class="box"><a href="index.html">DFGd</a></li>
+        <li class="box"><a href="index.html">GFDG</a></li>
+        <li class="box"><a href="index.html">sdfsd</a></li>
+      </ul>
+    </li>
+    <li><a class="Menu3" href="sobre.html">Sobre</a></li>
+  </ul> 
   <div class="categoria">
     <div class="imagem">
       <figure>
         <img class="categ_image" src="https://picsum.photos/id/119/600/340" alt="sobre">
       </figure>
     </div>
-    <h1 class="nome_categ">Mecatronica</h1>
-    <p class="texto_categ" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.</p>
+
+    <h1 class="nome_categ">{{this.categoria}}</h1>
+    <p class="texto_categ" >{{this.descricaocateg}}</p>
   </div>
   <main class="main">
     <div class="lista">  
-      <ul>
+      <ul class = "UL">
         <li>
           <h1 class="projeto">
             Projetos:
           </h1>
         </li>
-        <li>
-          <a class="link1" href="projeto.html">Estação metereológica:</a>
-          <p class="descricao1">Qualquer coisa pode e estará escrita aqui professor</p>
-          <img class="img1" src="https://picsum.photos/1000/100/?random" alt="projeto dos ambulantes">
+        {{#each projetos}}
+        <li class = "ind">
+          <a class="link1" href="projeto.html?pai=value&key={{@key}}">{{this.titulo}}</a>
+          <p class="descricao1">{{this.descricao}}</p>
+          <img class="img1" src="https://picsum.photos/1400/200/?random" alt="projeto dos ambulantes">
         </li>
-        <li>
-          <a class="link2" href="projeto.html">Ambulantes:</a>
-          <p class="descricao2">Qualquer coisa pode e estará escrita aqui professor</p>
-          <img class="img2" src="https://picsum.photos/1000/100/?random" alt="projeto da estação">
-        </li>
-        <li>
-          <a class="link3" href="projeto.html">Girafa:</a>
-          <p class="descricao3">Qualquer coisa pode e estará escrita aqui professor</p>
-          <img class="img3" src="https://picsum.photos/1000/100/?random" alt="projeto da girafa">
-        </li>
+        {{/each}}
       </ul>
     </div>
   </main>

@@ -1,12 +1,25 @@
 .header {
 	width: 100%;
 	justify-content: flex-start;
-	display: flex; 
+	display: flex ; 
 	margin: 0 auto;
 }
 
 body{
 	background: #edf0ff;
+}
+
+.Ul{
+	width: 100%;
+
+}
+
+.ind{
+	background: #292d40;
+	margin: 2rem;
+	border-radius: 1rem;
+	padding: 1rem;
+
 }
 
 .navi {
@@ -24,15 +37,22 @@ body{
 	margin-bottom: 1.5rem;
 }
 
-.menu{
-	display: none;
-}
 
 .Menu1, .Menu2, .Menu3 {
 	color:#EDF0FF;
 	text-decoration: none;
 }
 
+
+.Menu2:hover .box1 p{
+	display: flex;
+}
+
+.box1, .box2, .box3, .box4{
+	display: none;
+}
+
+}
 .menu_tag, .figura{
 	display: none;
 }
@@ -55,14 +75,14 @@ body{
 	border-radius: 2rem;
 	background: #292d40;
 	padding: 2rem;
-  justify-content:  center;
-  max-width:  80%;
-  align-items:  center;
+  	justify-content:  center;
+  	max-width:  80%;
+  	align-items:  center;
 }
 
 .categ_image{
 	max-width: 100%;
-  align-items: center;
+  	align-items: center;
 }
 
 .nome_categ{
@@ -91,10 +111,10 @@ body{
 
 .projeto{
 	display: block;
-	padding: 2rem 0rem 2rem 0rem;
+	padding: 2rem 0rem 2rem 2rem;
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 2rem;
-  justify-content: flex-start;
+  	justify-content: flex-start;
 }
 
 .lista{
@@ -102,26 +122,29 @@ body{
 	flex-wrap: wrap;
 	justify-content: center;
 	font-family: 'Red Hat Display', sans-serif;
-  margin: 2rem;
+ 	margin: 2rem;
 }
 
-.link1, .link2, .link3{
-	background-color: #292d40;
+.link1{
 	color: #edf0ff;
-	line-height: 3rem;
-	padding: .3rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
+	text-decoration: none;
+	margin-top: 1rem;
+	font-family: 'Lora', serif;
 }
 
-.descricao1, .descricao2, .descricao3{
+.descricao1{
 	margin-top: 1rem; 
 	margin-bottom: 1rem;
-  font-size: 1.5rem;
+	font-size: 1.5rem;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #edf0ff;
 }
 
-.img1, .img2, .img3{
+.img1{
 	width: 100%;
 	margin-bottom: 1rem;
+	border-radius: 1rem;
 }
 
 .menu_tag, .figura{
@@ -151,75 +174,75 @@ body{
 		width: 100%;
 	}
 
-	.menu_tag{
-		display:flex;
-		width: 50%;
-		height: 50%;
-		justify-content: center;
-		align-items: center;
-	}
+  .menu_tag{
+    display:flex;
+    width: 4.5rem;
+    justify-content: center;
+    align-items: center;
+  }
 
 	.header{
 		display:  flex;
 		width: 100%
 	}
 
-	.figura{
-		display: flex;
-		justify-content: center;
-		align-items:center;
-		max-width: 100%;
-	}
+  .figura{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+  }
 
 	.logo{
 		width: 190px
 	}
 
-  .categoria{
-    margin: 0rem 2rem;
-    display: grid;
-    grid-template-rows: 15rem;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items:  center;
-    grid-gap: .5rem;
-  }
-  .imagem{
-    display: flex;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    max-width: 100%;
-    height: auto;
-    padding:1rem;
-  }
+	.categoria{
+		margin: 0rem 2rem;
+		display: grid;
+		grid-template-rows: 15rem;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items:  center;
+		grid-gap: .5rem;
+	}
+	.imagem{
+		display: flex;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		max-width: 100%;
+		height: auto;
+		padding:1rem;
+	}
 
-  .categ_image{
-    width: 100%
-  }
+	.categ_image{
+		width: 100%;
+		border-radius:2rem;
+	}
 
-  .nome_categ{
-  	display: flex;
-  	width: 100%;
-  	grid-column-start: 1;
-  	grid-column-end: 3;
-  	grid-row-start: 3;
-  	grid-row-end: 4;
-  	margin-top: 2rem;
-    justify-content: center
-  }
+	.nome_categ{
+		display: flex;
+		width: 100%;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		margin-top: 2rem;
+		justify-content: center
+	}
 
-  .texto_categ{
-  	max-width: 99%;
-  	grid-column-start: 1;
-  	grid-column-end: 3;
-  	grid-row-start: 4;
-  	grid-row-end: 4;
-  	margin-top: 1rem;
-  	padding: 1rem;
-    margin-right:  .5rem;
-  }
+	.texto_categ{
+		max-width: 99%;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		margin-top: 1rem;
+		padding: 1rem;
+		margin-right:  .5rem;
+	}
 
-  .projeto{
-    padding-top: 0rem;
-  }
+	.projeto{
+		padding-top: 0rem;
+	}
 }

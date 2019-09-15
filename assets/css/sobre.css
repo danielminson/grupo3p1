@@ -29,11 +29,8 @@
 
 .figure{  
   justify-content: center;
-  margin-left: 2rem;
   display: flex;
-  margin:0.1rem;
-  margin-left: 2rem;
-}
+  margin: 1rem;}
 
 .sobre_image{
   width: 50%;
@@ -41,10 +38,9 @@
 }
 
 .imagem { 
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   padding:1rem;
-  margin: 1rem;
   background:#292d40;
   border-radius: 2rem;
 }
@@ -70,10 +66,11 @@
 }
 
 .texto_com_imagem{
-  width: 45%;
+  width: 47%;
   justify-content: center;
   font-family: 'Lora', sans-serif;
   margin: 1rem;
+  margin-right: 0.5rem;
   padding:1rem;
   background:#292d40;
   border-radius: 2rem;
@@ -85,7 +82,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .menu_tag, .figura{
@@ -115,7 +112,7 @@
   .imagem, .sobre_image, .figure{
     justify-content: center;
     margin: 0rem;
-    width: 100%;
+    max-width: 100%;
   }
   .imagem{
     justify-content: center;
@@ -137,12 +134,12 @@
     padding: 0rem;
     justify-content: center;
     align-items: center;
+    object-fit: contain
   }
 
   .menu_tag{
     display:flex;
-    width: 50%;
-    height: 50%;
+    width: 4.5rem;
     justify-content: center;
     align-items: center;
   }
@@ -156,7 +153,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    max-width: 100%;
+    width: 100%;
   }
 
   .navi{

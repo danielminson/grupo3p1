@@ -8,6 +8,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1">	
+	<script src="assets/js/codes.js"></script>
+	<script src="assets/js/sobre.js"></script>
 </head>
 <body class="body">
 	<header class="header">
@@ -25,13 +27,12 @@
 	<div class="divisao_horizontal">
 		<div class="sobre_image">
 			<figure class="figure">
-				<img class ="imagem" src="https://picsum.photos/id/119/500/400" alt="sobre">
+				<img class ="imagem" src={{this.imagemsobre}} alt="sobre">
 			</figure>
 		</div>
 		<div class="texto_com_imagem">
 			<h1 class="posicao_texto_sobre">Sobre</h1>
-			<p class="texto_sobre" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p class="texto_sobre" >{{this.sobre}}</p>
 		</div>
 	</div>
 </body>

@@ -206,7 +206,7 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		width: 100%;
+		max-width: 100%;
 	}
 
 	.logo{
@@ -236,7 +236,7 @@ body{
 	}
 
 	.categ_image{
-		width: 100%;
+		max-width: 100%;
 		border-radius:0rem;
 	}
 

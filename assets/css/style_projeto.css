@@ -34,7 +34,7 @@
 }
 
 .Project-img {
-  width: 50%;
+  max-width: 50%;
   justify-content:center;
 }
 
@@ -169,7 +169,7 @@
   .navi{
     display: none;
   }
-  
+
   .project-class{
     margin-left: 0rem;
     margin-bottom: 2rem;
@@ -179,6 +179,7 @@
     margin: 0rem;
     border-radius: 2rem;
     margin-left: 0rem;
+    max-width: 100%
   }
 
   .Project-imgs{

@@ -17,7 +17,7 @@ body{
 .ind{
 	background: #292d40;
 	margin: 2rem;
-	border-radius: 1rem;
+	border-radius: 2rem;
 	padding: 1rem;
 
 }
@@ -60,14 +60,13 @@ body{
 .categoria{
 	margin: 0rem 2rem;
 	display: grid;
-	grid-template-rows: 2rem 25rem;
+	grid-template-rows: 2rem 30rem;
 	grid-template-columns:  1fr 1fr;
 	justify-items: center;
 	grid-gap: .5rem;
 }
 
 .imagem{
-	display:flex;
 	grid-column-start: 1;
 	grid-column-end: 1;
 	grid-row-start: 2;
@@ -75,15 +74,11 @@ body{
 	border-radius: 2rem;
 	background: #292d40;
 	padding: 2rem;
-  	justify-content:  center;
-  	max-width:  80%;
-  	align-items:  center;
+	justify-content:  center;
+	max-width:  90%;
+	align-items:  center;
 }
 
-.categ_image{
-	max-width: 100%;
-  	align-items: center;
-}
 
 .nome_categ{
 	grid-column-start: 2;
@@ -114,7 +109,7 @@ body{
 	padding: 2rem 0rem 2rem 2rem;
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 2rem;
-  	justify-content: flex-start;
+	justify-content: flex-start;
 }
 
 .lista{
@@ -122,7 +117,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: center;
 	font-family: 'Red Hat Display', sans-serif;
- 	margin: 2rem;
+	margin: 2rem;
 }
 
 .link1{
@@ -136,22 +131,40 @@ body{
 .descricao1{
 	margin-top: 1rem; 
 	margin-bottom: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-family: 'Red Hat Display', sans-serif;
 	color: #edf0ff;
 }
 
+.categ_image_figure{
+	height: 100%;
+	display:flex;
+	object-fit: contain
+}
+
+.categ_image{
+	max-width: 100%;
+	align-items: center;
+}
+
+.imagenscropadas{
+	max-width: 100%;
+}
+
 .img1{
-	width: 100%;
 	margin-bottom: 1rem;
-	border-radius: 1rem;
+	object-fit: cover;
+	width: 1600px;
+	height: 300px;
+	max-width: 100%;
+	object-position: 0 +20%;
 }
 
 .menu_tag, .figura{
 	display: none;
 }
 
-.figure{  
+.figura{  
 	justify-content: center;
 	margin-left: 2rem;
 	display: flex;
@@ -168,35 +181,40 @@ body{
 		display: none;
 	}
 
-	.figure{
-		justify-content: center;
-		margin: 0rem;
-		width: 100%;
+	.img1{
+		margin-bottom: 1rem;
+		object-fit: cover;
+		width: 350px;
+		height: 100px;
+		max-width: 100%;
+		object-position: 0 +20%;
 	}
-
-  .menu_tag{
-    display:flex;
-    width: 4.5rem;
-    justify-content: center;
-    align-items: center;
-  }
+	.menu_tag{
+		display:flex;
+		width: 4.5rem;
+		justify-content: center;
+		align-items: center;
+	}
 
 	.header{
 		display:  flex;
 		width: 100%
 	}
 
-  .figura{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 100%;
-  }
+	.figura{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		width: 100%;
+	}
 
 	.logo{
 		width: 190px
 	}
 
+	.lista{
+		margin:0rem;
+	}
 	.categoria{
 		margin: 0rem 2rem;
 		display: grid;
@@ -212,12 +230,13 @@ body{
 		grid-row-end: 3;
 		max-width: 100%;
 		height: auto;
-		padding:1rem;
+		padding:1rem
+
 	}
 
 	.categ_image{
 		width: 100%;
-		border-radius:2rem;
+		border-radius:0rem;
 	}
 
 	.nome_categ{
@@ -227,8 +246,10 @@ body{
 		grid-column-end: 3;
 		grid-row-start: 3;
 		grid-row-end: 4;
-		margin-top: 2rem;
-		justify-content: center
+		margin-top: -1rem;
+		justify-content: center;
+		align-items:flex-start;
+
 	}
 
 	.texto_categ{
@@ -243,6 +264,16 @@ body{
 	}
 
 	.projeto{
-		padding-top: 0rem;
+		padding-top: 2rem;
+		padding-bottom: 0rem
 	}
 }
+
+@media (max-width: 1070px)and(min-width:421px) {
+	.img1{
+		margin-bottom: 1rem;
+		object-fit: cover;
+		height: 200px;
+		max-width: 100%;
+		object-position: 0 +20%;
+	}

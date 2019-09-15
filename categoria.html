@@ -22,20 +22,13 @@
     <li>
       <a class="Menu1" href="index.html">Home</a>
     </li>
-    <li class="Menu2"><p>Projetos</p>      
-      <ul class="teste">
-        <li class="box"><a href="index.html">GFDGFD</a></li>
-        <li class="box"><a href="index.html">DFGd</a></li>
-        <li class="box"><a href="index.html">GFDG</a></li>
-        <li class="box"><a href="index.html">sdfsd</a></li>
-      </ul>
-    </li>
+    <li><a class="Menu2" href="projeto.html">Projeto</a></li>
     <li><a class="Menu3" href="sobre.html">Sobre</a></li>
   </ul> 
   <div class="categoria">
     <div class="imagem">
-      <figure>
-        <img class="categ_image" src="https://picsum.photos/id/119/600/340" alt="sobre">
+      <figure class="categ_image_figure">
+        <img class="categ_image" src={{this.imagemcateg}} alt={{this.categoria}}>
       </figure>
     </div>
 
@@ -54,7 +47,9 @@
         <li class = "ind">
           <a class="link1" href="projeto.html?pai=value&key={{@key}}">{{this.titulo}}</a>
           <p class="descricao1">{{this.descricao}}</p>
-          <img class="img1" src="https://picsum.photos/1400/200/?random" alt="projeto dos ambulantes">
+          <figure class="imagenscropadas">
+            <img class="img1" src={{this.imagem}} alt={{this.titulo}}>
+          </figure>
         </li>
         {{/each}}
       </ul>

@@ -96,6 +96,42 @@
 .posicao_titulo_sobre_mobile{
   display: none
 }
+
+.menu{
+  align-items: flex-end;
+  margin: 0rem;
+}
+
+.sub_menu{
+  display:none;
+  flex-direction:row;
+  justify-content: space-around;
+  background: #292d40;
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  
+ 
+}
+
+.Sub_Menu1, .Sub_Menu2, .Sub_Menu3 {
+  color: #edf0ff;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+}
+
+.menu:hover .navi {
+	border-bottom-left-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+  }
+
+  .menu:hover .sub_menu{
+	display: flex;
+  background-color: #525980;
+
+  }
+
 @media (max-width: 420px) {
   .Menu1, .Menu2, .Menu3 {
     display: none;

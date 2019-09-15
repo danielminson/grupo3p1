@@ -6,4 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.nav', context)
 	coDesReplace('.figura_index', context)
   })
+
+  db.download('/', function(data) {
+    context = data
+    coDesReplace('.sub_menu', context)
+  })
 })

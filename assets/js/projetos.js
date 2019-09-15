@@ -14,4 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.project-container', context)
     coDesReplace("Project-img", context)   
     })
+
+    db.download('/', function(data) {
+        context = data
+        coDesReplace('.sub_menu', context)
+      })
 })

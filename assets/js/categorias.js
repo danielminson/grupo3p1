@@ -20,4 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace(".categ_image_figure", context)    
     
     })
+
+    db.download('/', function(data) {
+        context = data
+        coDesReplace('.sub_menu', context)
+      })
 })

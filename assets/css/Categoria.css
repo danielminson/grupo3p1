@@ -34,9 +34,8 @@ body{
 	background: #292d40;
 	font-size: 1.5rem;
 	border-radius: 2rem;
-	margin-bottom: 1.5rem;
+	
 }
-
 
 .Menu1, .Menu2, .Menu3 {
 	color:#EDF0FF;
@@ -172,6 +171,45 @@ body{
 	margin-left: 2rem;
 }
 
+.menu{
+	align-items: flex-end;
+	margin: 0rem;
+	margin-bottom: 1.5rem;
+  }
+  
+  .sub_menu{
+	display:none;
+	flex-direction:row;
+	justify-content: space-around;
+	background: #292d40;
+	padding: 1rem;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	
+   
+  }
+  
+  .Sub_Menu1, .Sub_Menu2, .Sub_Menu3 {
+	color: #edf0ff;
+	font-size: 1.5rem;
+	text-decoration: none;
+	
+   
+  }
+  
+  .menu:hover .navi {
+	border-bottom-left-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+	display: flex;
+  }
+
+  .menu:hover .sub_menu{
+	display: flex;
+	background-color: #525980;
+
+
+  }
+
 @media (max-width: 420px) {
 	.navi{
 		display:  none;
@@ -205,7 +243,8 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		max-width: 100%;
+		width: 100%;
+		margin-left: 0rem;
 	}
 
 	.logo{
@@ -216,7 +255,6 @@ body{
 		margin:0rem;
 	}
 	.categoria{
-		margin: 0rem 2rem;
 		display: grid;
 		grid-template-rows: 15rem;
 		grid-template-columns: 1fr;

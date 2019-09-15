@@ -6,4 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.texto_sobre', context)
     coDesReplace('.sobre_image', context)
   })
+
+  db.download('/', function(data) {
+    context = data
+    coDesReplace('.sub_menu', context)
+  })
 })

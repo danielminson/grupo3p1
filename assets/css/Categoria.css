@@ -137,9 +137,8 @@ body{
 }
 
 .categ_image_figure{
-	height: 100%;
+	width: 100%;
 	display:flex;
-	object-fit: contain
 }
 
 .categ_image{

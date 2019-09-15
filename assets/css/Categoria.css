@@ -144,7 +144,8 @@ body{
 .categ_image{
 	max-width: 100%;
 	align-items: center;
-	display: flex
+	display: flex;
+	max-height:12rem;
 }
 
 .imagenscropadas{

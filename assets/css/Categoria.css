@@ -238,6 +238,7 @@ body{
 	.categ_image{
 		max-width: 100%;
 		border-radius:0rem;
+		max-height: 100px
 	}
 
 	.nome_categ{

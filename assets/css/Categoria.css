@@ -18,7 +18,6 @@ body{
 	margin: 2rem;
 	border-radius: 2rem;
 	padding: 1rem;
-
 }
 
 .categoria{
@@ -41,6 +40,7 @@ body{
 	justify-content:  center;
 	max-width:  90%;
 	align-items:  center;
+	display: flex;
 }
 
 

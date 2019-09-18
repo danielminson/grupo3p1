@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let load = document.querySelector(".link1")
     load.href=strLink
 
-    console.log(strLink)
-
     db.download('/', function(data) {
     context = data["portfolio"][value]
     console.log(context)

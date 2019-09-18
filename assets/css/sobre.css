@@ -5,44 +5,25 @@
   background: #edf0ff;
 }
 
-.navi {
-  display:flex;
-  flex-direction:row;
-  justify-content: space-around;
-  width:  100%;
-  margin:0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: 'Lora', sans-serif;
-  background: #292d40;
-  font-size: 1.5rem;
-  border-radius: 2rem;
-}
-
-.Menu1, .Menu2, .Menu3 {
-  color:#EDF0FF;
-  text-decoration: none;
-}
-
-.logo {
-}
-
-.figure{  
+.figurejudite{  
   justify-content: center;
   display: flex;
-  margin: 1rem;}
+  margin: 0rem;
+  width: 100%
+}
 
 .sobre_image{
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
-.imagem { 
-  max-width: 95%;
+.imagemjudite { 
+  max-width: 80%;
   height: auto;
   padding:1rem;
   background:#292d40;
   border-radius: 2rem;
+  margin-top: 1rem
 }
 
 .texto_sobre{
@@ -53,6 +34,8 @@
   font-family: 'Red Hat Display', sans-serif;
   color:#EDF0FF;
   font-size: 1.2rem;
+  letter-spacing: .2rem;
+  line-height:1.5rem;
 }
 
 .posicao_texto_sobre{
@@ -66,15 +49,16 @@
 }
 
 .texto_com_imagem{
-  width: 47%;
+  width: 85%;
   justify-content: center;
   font-family: 'Lora', sans-serif;
   margin: 1rem;
-  margin-right: 0.5rem;
+  margin-right: 2rem;
   padding:1rem;
   background:#292d40;
   border-radius: 2rem;
   margin-left: 2rem;
+  margin-bottom: 0rem;
 }
 
 .divisao_horizontal{
@@ -85,58 +69,10 @@
   justify-content: center;
 }
 
-.menu_tag, .figura{
-  display: none;
-}
-
-.header{
-  display:flex;
-}
-
 .posicao_titulo_sobre_mobile{
   display: none
 }
-
-.menu{
-  align-items: flex-end;
-  margin: 0rem;
-}
-
-.sub_menu{
-  display:none;
-  flex-direction:row;
-  justify-content: space-around;
-  background: #292d40;
-  padding: 1rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  
- 
-}
-
-.Sub_Menu1, .Sub_Menu2, .Sub_Menu3 {
-  color: #edf0ff;
-  font-size: 1.5rem;
-  text-decoration: none;
-
-}
-
-.menu:hover .navi {
-	border-bottom-left-radius: 0rem;
-	border-bottom-right-radius: 0rem;
-  }
-
-  .menu:hover .sub_menu{
-	display: flex;
-  background-color: #525980;
-
-  }
-
 @media (max-width: 420px) {
-  .Menu1, .Menu2, .Menu3 {
-    display: none;
-  }
-
   .divisao_horizontal{
     flex-flow: column;
     margin:0rem;
@@ -144,56 +80,40 @@
     justify-content: center;
     align-items: center;
   }
-
-  .imagem, .sobre_image, .figure{
+  .figure{
     justify-content: center;
     margin: 0rem;
-    max-width: 100%;
   }
-  .imagem{
+
+  .imagemjudite{
     justify-content: center;
+    max-width: 80%
   }
   .texto_com_imagem{
-    width:  70%;
+    max-width:  80%;
     justify-content: center;
     flex-flow: center;
     margin:0rem;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .texto_sobre{
     padding:  0rem;
   }
   .sobre_image{
-    width:  70%;
-    margin:0rem;
+    margin:2rem;
+    margin-top: .5rem;
     padding: 0rem;
     justify-content: center;
     align-items: center;
-    object-fit: contain
-  }
-
-  .menu_tag{
-    display:flex;
-    width: 4.5rem;
-    justify-content: center;
-    align-items: center;
+    object-fit: contain;
+    max-width: 100%;
   }
 
   .header{
     display:  flex;
     width: 100%
-  }
-
-  .figura{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 100%;
-  }
-
-  .navi{
-    display:  none;
   }
 
   .posicao_texto_sobre{
@@ -208,9 +128,10 @@
     display: flex;
     justify-content: center;
     margin: 1rem;
+    margin-bottom: 0rem;
     margin-top: 0rem;
     font-family: 'Lora', sans-serif;
     font-size: 2rem;
-
   }
+
 }

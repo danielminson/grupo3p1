@@ -18,11 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.texto_categ', context)     
     coDesReplace('.ind', context) 
     coDesReplace(".categ_image_figure", context)    
+    coDesReplace(".sub_menu4", context)    
+
     
     })
 
     db.download('/', function(data) {
         context = data
         coDesReplace('.sub_menu', context)
+        coDesReplace('.sub_menu4', context)
       })
 })

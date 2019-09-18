@@ -5,10 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data
     coDesReplace('.texto_sobre', context)
     coDesReplace('.sobre_image', context)
-  })
-
-  db.download('/', function(data) {
-    context = data
-    coDesReplace('.sub_menu', context)
+    coDesReplace('.sub_menu4', context)
+    coDesReplace('.sub_menu', context)    
   })
 })
